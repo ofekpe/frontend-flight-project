@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnoAir - Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #00FF00; /* Slime Green */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .menu a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #00FF00; /* Slime Green */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .help-button {
+            position: absolute;
+            top: -30px;
+            right: 20px;
+        }
+        .help-button a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: white; /* White background */
+            color: #00FF00; /* Slime Green for ? */
+            font-size: 30px;
+            font-weight: bold;
+            border: 2px solid #00FF00; /* Slime Green border */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 55px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .help-button a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnoAir</h1>
+    </header>
+    <main>
+        <div class="menu">
+            <a href="/manage-flights">Admin - Manage Flights</a>
+            <a href="./destinations.html">Admin - Manage Destinations</a>
+            <a href="/book-flight">User - Book a Flight</a>
+            <a href="/manage-bookings">User - Manage Bookings</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 OnoAir. All rights reserved.</p>
+        <div class="help-button">
+            <a href="/help" title="Help">?</a>
+        </div>
+    </footer>
+</body>
+</html>
