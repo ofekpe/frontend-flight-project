@@ -1,5 +1,5 @@
-import Booking from "../models/booking.js";
-import Passenger from "../models/passenger.js";
+import Booking from "../classes/booking.js";
+import Passenger from "../classes/passenger.js";
 
 const bookings = [
   new Booking("W61283", [
