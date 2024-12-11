@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #00ff00; /* Slime green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .save-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #00ff00; /* Slime green */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .save-button:hover {
+            background-color: #32cd32; /* Darker green */
+        }
+        .help-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .help-button a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: white; /* White background */
+            color: #00ff00; /* Slime green */
+            font-size: 30px;
+            font-weight: bold;
+            border: 2px solid #00ff00; /* Slime green border */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 55px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .help-button a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .success-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function saveDestination() {
+            const successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>New Destination</h1>
+    </header>
+
+    <div class="container">
+        <h2>Add New Destination</h2>
+        <div class="form-group">
+            <label for="destination-code">Destination Code:</label>
+            <input type="text" id="destination-code" placeholder="Enter destination code">
+        </div>
+        <div class="form-group">
+            <label for="destination-name">Destination Name:</label>
+            <input type="text" id="destination-name" placeholder="Enter destination name">
+        </div>
+        <div class="form-group">
+            <label for="airport-name">Airport Name:</label>
+            <input type="text" id="airport-name" placeholder="Enter airport name">
+        </div>
+        <div class="form-group">
+            <label for="airport-url">Airport URL:</label>
+            <input type="url" id="airport-url" placeholder="Enter airport website URL">
+        </div>
+        <div class="form-group">
+            <label for="image-url">Image URL:</label>
+            <input type="url" id="image-url" placeholder="Enter image URL">
+        </div>
+        <button class="save-button" onclick="saveDestination()">Save</button>
+        <div id="success-message" class="success-message">Destination saved successfully!</div>
+    </div>
+
+    <div class="help-button">
+        <a href="/help" title="Help">?</a>
+    </div>
+</body>
+</html>
