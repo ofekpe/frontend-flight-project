@@ -204,3 +204,12 @@ th {
   max-height: 500px;
   overflow: auto;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.destination-image {
+  max-width: 200px;
+}

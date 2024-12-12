@@ -2,11 +2,28 @@ import Destination from "../classes/destination.js";
 
 const destinations = [
   new Destination(
+    "ATL",
+    "Atlanta",
+    "Hartsfield-Jackson Atlanta International Airport",
+    "https://www.atl.com/",
+    "../assets/TLV.jpg",
+    ""
+  ),
+  new Destination(
+    "LCA",
+    "Larnaca",
+    "Larnaca International Airport",
+    "https://www.hermesairports.com/",
+    "../assets/TLV.jpg",
+    "info@ben-gurion.com"
+  ),
+
+  new Destination(
     "TLV",
     "Tel Aviv",
     "Ben Gurion Airport",
     "https://www.iaa.gov.il/en/",
-    "../../public/destinations/TLV.jpeg",
+    "../assets/TLV.jpg",
     "info@ben-gurion.com"
   ),
   new Destination(
@@ -14,7 +31,7 @@ const destinations = [
     "San Francisco",
     "San Francisco International Airport",
     "https://www.flysfo.com/",
-    "../../public/destinations/SFO.jpeg",
+    "../assets/TLV.jpg",
     "info@flysfo.com"
   ),
   new Destination(
@@ -22,7 +39,7 @@ const destinations = [
     "Tokyo",
     "Narita International Airport",
     "https://www.narita-airport.jp/en/",
-    "../../public/destinations/NRT.jpeg",
+    "../assets/TLV.jpg",
     "contact@narita-airport.jp"
   ),
   new Destination(
@@ -30,7 +47,7 @@ const destinations = [
     "Sydney",
     "Sydney Kingsford Smith Airport",
     "https://www.sydneyairport.com.au/",
-    "../../public/destinations/SYD.jpeg",
+    "../assets/TLV.jpg",
     "support@sydneyairport.com.au"
   ),
   new Destination(
@@ -38,7 +55,7 @@ const destinations = [
     "Frankfurt",
     "Frankfurt Airport",
     "https://www.frankfurt-airport.com/",
-    "../../public/destinations/FRA.jpeg",
+    "../assets/TLV.jpg",
     "help@frankfurt-airport.com"
   ),
   new Destination(
@@ -46,7 +63,7 @@ const destinations = [
     "Tokyo",
     "Haneda Airport",
     "https://tokyo-haneda.com/en/",
-    "../../public/destinations/HND.jpeg",
+    "../assets/TLV.jpg",
     "support@tokyo-haneda.com"
   ),
   new Destination(
@@ -54,7 +71,7 @@ const destinations = [
     "Los Angeles",
     "Los Angeles International Airport",
     "https://www.flylax.com/",
-    "../../public/destinations/LAX.jpeg",
+    "../assets/LAX.jpeg",
     "info@flylax.com"
   ),
   new Destination(
@@ -62,7 +79,7 @@ const destinations = [
     "Dubai",
     "Dubai International Airport",
     "https://www.dubaiairports.ae/",
-    "../../public/destinations/DXB.jpeg",
+    "../assets/TLV.jpg",
     "help@dubai-airports.ae"
   ),
   new Destination(
@@ -70,7 +87,7 @@ const destinations = [
     "New York",
     "John F. Kennedy International Airport",
     "https://www.jfkairport.com/",
-    "../../public/destinations/JFK.jpeg",
+    "../assets/TLV.jpg",
     "contact@jfkairport.com"
   ),
   new Destination(
@@ -78,7 +95,7 @@ const destinations = [
     "London",
     "Heathrow Airport",
     "https://www.heathrow.com/",
-    "../../public/destinations/LHR.jpeg",
+    "../assets/TLV.jpg",
     "support@heathrow.com"
   ),
   new Destination(
@@ -86,7 +103,7 @@ const destinations = [
     "Paris",
     "Charles de Gaulle Airport",
     "https://www.parisaeroport.fr/en",
-    "../../public/destinations/CDG.jpeg",
+    "../assets/TLV.jpg",
     "info@parisaeroport.fr"
   ),
   new Destination(
@@ -94,7 +111,7 @@ const destinations = [
     "Krakow",
     "John Paul II International Airport",
     "https://www.krakowairport.pl/",
-    "../../public/destinations/KRK.jpeg",
+    "../assets/TLV.jpg",
     "info@krakowairport.pl"
   ),
   new Destination(
@@ -102,7 +119,7 @@ const destinations = [
     "Sydney",
     "Sydney Airport",
     "https://www.sydneyairport.com.au/",
-    "../../public/destinations/SYD.jpeg",
+    "../assets/TLV.jpg",
     "help@sydneyairport.au"
   ),
   new Destination(
@@ -110,7 +127,7 @@ const destinations = [
     "Los Angeles",
     "Los Angeles International Airport",
     "https://www.flylax.com/",
-    "../../public/destinations/LAX.jpeg",
+    "../assets/TLV.jpg",
     "info@flylax.com"
   ),
 ];

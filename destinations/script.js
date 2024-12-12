@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <td><a href="${destination.airportUrl}" target="_blank">Visit Website</a></td>
       <td>${destination.email}</td>
       <td>${destination.code}</td>
-      <td><img src="${destination.imageUrl}" alt="${destination.airportName}" /></td>
+      <td><img class="destination-image" src="${destination.imageUrl}" alt="${destination.airportName}" /></td>
     `;
 
     tableBody.appendChild(row);
